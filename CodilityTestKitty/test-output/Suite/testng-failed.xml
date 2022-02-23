@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <listeners>
+    <listener class-name="com.listener.MyTestNGListener"/>
+  </listeners>
+  <test thread-count="5" name="GoToOfficeTest(failed)" parallel="tests">
+    <classes>
+      <class name="testcases.GotoOfficeBattle">
+        <methods>
+          <include name="gotoOffice"/>
+        </methods>
+      </class> <!-- testcases.GotoOfficeBattle -->
+    </classes>
+  </test> <!-- GoToOfficeTest(failed) -->
+  <test thread-count="5" name="TakeBusTest(failed)" parallel="tests">
+    <classes>
+      <class name="testcases.TaketheBusBattle">
+        <methods>
+          <include name="takeBus"/>
+        </methods>
+      </class> <!-- testcases.TaketheBusBattle -->
+    </classes>
+  </test> <!-- TakeBusTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
